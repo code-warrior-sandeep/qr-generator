@@ -1,0 +1,106 @@
+/* Reset & Base Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url("images/3.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Container Styles */
+.container {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    text-align: center;
+}
+
+/* Notice heading */
+.container p {
+    font-size: 22px;
+    color: #161515;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#qrText {
+    padding: 10px;
+    width: 80%;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    font-size: 22px;
+    margin: 10px 0 20px 0;
+    outline: none;
+    transition: border-color 0.3s;
+}
+#qrText:focus {
+    border-color: #00feba;
+}
+
+/* QR image and box */
+#img-box {
+    margin-bottom: 20px;
+}
+
+#qrImage {
+    width: 180px;
+    height: 180px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #fff;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Buttons */
+#btn, #btn-Reset {
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 5px 0 5px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+#btn {
+    background-color: #007bff;
+}
+#btn:hover {
+    background-color: #0056b3;
+}
+
+#btn-Reset {
+    background-color: #ff0000;
+}
+#btn-Reset:hover {
+    background-color: #c70000;
+}
+
+/* Responsive Design */
+@media (max-width:536px){
+    .container{
+        padding: 24px 8px;
+        margin-top: 30px;
+    }
+    #qrText{
+        font-size: 18px;
+    }
+    .container p {
+        font-size: 18px;
+    }
+}
